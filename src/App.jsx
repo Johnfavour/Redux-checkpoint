@@ -3,7 +3,7 @@ import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 import tasksReducer from './redux/reducers'; 
 import AddTask from './components/AddTask'; 
-import ListTask from './components/ListTask'; 
+import ListTask from './components/ListTask';
 
 const store = createStore(tasksReducer); 
 
