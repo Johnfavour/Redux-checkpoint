@@ -20,8 +20,9 @@ const AddTask = () => {
         value={taskDescription}
         onChange={(e) => setTaskDescription(e.target.value)}
         placeholder="Enter task description"
+        style={{width:'300px', height:'40px', borderRadius:'10px', border:'none', padding:'5px', marginLeft:'70px'}}
       />
-      <button onClick={handleAddTask}>Add</button>
+      <button onClick={handleAddTask} className='btn' style={{marginLeft:'5px'}}>Add</button>
     </div>
   );
 };

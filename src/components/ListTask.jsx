@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { toggleTask, editTask } from '../redux/actions'; 
 import Task from './Task'; 
+import '../App.css'
 
 const ListTask = () => {
   const tasks = useSelector((state) => state.tasks); 
@@ -20,10 +21,10 @@ const ListTask = () => {
 
   return (
     <div>
-      <div>
-        <button onClick={() => setFilter('all')}>All</button>
-        <button onClick={() => setFilter('done')}>Done</button>
-        <button onClick={() => setFilter('notDone')}>Not Done</button>
+      <div className='btns'>
+        <button onClick={() => setFilter('all')} className='btn' style={{marginRight:'10px'}}>All</button>
+        <button onClick={() => setFilter('done')} className='btn' style={{marginRight:'10px'}}>Done</button>
+        <button onClick={() => setFilter('notDone')} className='btn'>Not Done</button>
       </div>
       {filteredTasks.map((task) => (
         <Task

@@ -1,0 +1,23 @@
+body{
+    background: linear-gradient(rgb(161, 115, 97),pink);
+}
+.todo{
+    text-align: center;
+    margin-top: 50px;
+}
+.btn{
+    width: 100px;
+    height: 40px;
+    border-radius: 15px; 
+    border: none;
+
+    background-color: rgb(221, 152, 127);
+}
+.btns{
+    margin-top: 20px;
+
+}
+.todos{
+    font-size: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
